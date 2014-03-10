@@ -129,6 +129,9 @@ setup(
     install_requires=requirements,
     setup_requires=requirements,
     tests_require=test_requirements,
+    extras_require={
+        "test": test_requirements,
+    },
 
     # for cffi
     zip_safe=False,
